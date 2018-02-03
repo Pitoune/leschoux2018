@@ -1,3 +1,7 @@
+home:
+    path: /
+    controller: App\Controller\NewsController:index
+
 logout:
     path: /logout
 
@@ -5,6 +9,9 @@ login:
     path: /login
     controller: App\Controller\SecurityController:login
 
-news_index:
-    path: /
-    controller: App\Controller\NewsController:index
+front:
+  resource: "routes/front.yml"
+
+admin:
+  resource: "routes/admin.yml"
+  prefix: /admin

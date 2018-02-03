@@ -1,0 +1,11 @@
+admin_user_index:
+    path: /
+    controller: App\Controller\Admin\UserController::index
+
+admin_user_new:
+    path: /new
+    controller: App\Controller\Admin\UserController::edit
+
+admin_user_edit:
+    path: /edit/{id}
+    controller: App\Controller\Admin\UserController::edit

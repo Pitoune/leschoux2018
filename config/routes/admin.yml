@@ -1,0 +1,3 @@
+admin_user:
+  resource: "admin/user.yml"
+  prefix: /user

@@ -8,6 +8,10 @@ App\Entity\User:
         username:
             type: string
             length: 100
+        email:
+            type: string
         password:
             type: string
             length: 100
+        roles:
+            type: array

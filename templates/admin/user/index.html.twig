@@ -1,0 +1,32 @@
+{% extends "admin/admin.html.twig" %}
+
+{% block title %}Les Choux 2018 | Admin utilisateurs{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Liste des utilisateurs</h1>
+
+        <p><a href="{{ path('admin_user_new') }}"><button type="button" class="btn btn-primary">Créer</button></a></p>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Adresse email</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for user in users %}
+                <tr>
+                    <th scope="row">{{ user.id }}</th>
+                    <th scope="row">{{ user.username }}</th>
+                    <th scope="row">{{ user.email }}</th>
+                    <th scope="row"><a href="{{ path('admin_user_edit', { 'id': user.id}) }}"><button type="button" class="btn btn-primary">Modifier</button></a></th>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
