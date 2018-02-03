@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Les Choux 2018 | News{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>News</h1>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Titre</th>
+                <th scope="col">Message</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in news %}
+                <tr>
+                    <th scope="row">{{ item.title }}</th>
+                    <th scope="row">{{ item.message }}</th>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
