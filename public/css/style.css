@@ -29,6 +29,10 @@ body {
     text-align: center;
 }
 
+.align-right {
+    text-align: right;
+}
+
 /*
  * NAV
  */
@@ -145,6 +149,125 @@ body {
 }
 
 /*
+ * PROGRAM
+ */
+#program {
+    margin-top: 30px;
+}
+
+.program-top {
+    margin-bottom: 20px;
+}
+
+.img8 {
+    float: right;
+}
+
+.yes {
+    width: 300px;
+    min-height: 200px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yes-title {
+    font-size: 30px;
+}
+
+.yes-item {
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.yes-item .time {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.yes-item-image img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.yes-item-image {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.party-item {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.party-item img {
+    margin: 0 auto;
+    display: block;
+}
+
+.party-item .time {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sleep {
+    width: 400px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.program-bottom {
+    min-height: 330px;
+    float: right;
+    width: 640px;
+}
+
+.brunch {
+    width: 640px;
+    min-height: 200px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.brunch-item {
+    float: left;
+    margin-right: 80px;
+    margin-left: 80px;
+    width: 160px;
+    text-align: center;
+}
+
+.brunch-item img {
+    margin: 0 auto;
+    display: block;
+}
+
+.brunch-item .time {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tomorrow {
+    width: 460px;
+    text-align: center;
+    margin: 50px auto;
+    font-weight: bold;
+}
+
+/*
  * MOBILE
  */
 @media screen and (max-width: 1200px)
@@ -160,4 +283,14 @@ body {
         width: auto;
     }
     .item-where-first { margin-left: 0; }
+    .img8{ display: none; }
+    .img9{ display: none; }
+    .sleep { width: auto; }
+    .program-bottom {
+        float: none;
+        width: auto;
+    }
+    .brunch { width: auto; }
+    .brunch-item { float: none; }
+    .tomorrow { width: auto; }
 }
