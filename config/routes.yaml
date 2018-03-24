@@ -1,6 +1,6 @@
 home:
     path: /
-    controller: App\Controller\NewsController:index
+    controller: App\Controller\MainController:home
 
 logout:
     path: /logout

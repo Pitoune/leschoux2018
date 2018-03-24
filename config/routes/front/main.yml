@@ -1,0 +1,19 @@
+front_main_where:
+    path: /cest-ou
+    controller: App\Controller\MainController:where
+
+front_main_program:
+    path: /cest-quoi-le-programme
+    controller: App\Controller\MainController:program
+
+front_main_details:
+    path: /les-details-hyper-importants
+    controller: App\Controller\MainController:details
+
+front_main_answer:
+    path: /rsvp
+    controller: App\Controller\MainController:answer
+
+front_main_contact:
+    path: /contact
+    controller: App\Controller\MainController:contact

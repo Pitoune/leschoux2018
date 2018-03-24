@@ -1,0 +1,101 @@
+body {
+    background: #FAF2F2;
+    font-family: Playfair Display;
+}
+
+.text-red {
+    color: #6F1F24;
+}
+
+.reenie-beanie {
+    font-family: Reenie Beanie;
+}
+
+/*
+ * NAV
+ */
+.nav-link-text {
+    padding-top: 15px;
+}
+
+.nav-link-text:hover {
+    color: #6F1F24;
+    text-decoration: underline;
+}
+
+/*
+ * FOOTER
+ */
+#footer {
+    text-align: center;
+    margin: 20px;
+}
+
+/*
+ * HOME
+ */
+#home {
+    min-height: 660px;
+}
+
+.images {
+    min-height: 460px;
+}
+
+.img-middle {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.img-right {
+    position: absolute;
+    top: 190px;
+    right: 170px;
+}
+
+.img-left {
+    position: absolute;
+    top: 290px;
+    left: 170px;
+}
+
+.img-mobile {
+    display: none;
+}
+
+#counter {
+    width: 320px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.counter-item {
+    background: white;
+    width: 70px;
+    padding: 2px;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.counter-number {
+    font-size: 40px;
+}
+
+/*
+ * MOBILE
+ */
+@media screen and (max-width: 1200px)
+{
+    .images{ display: none; }
+    .img-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+}

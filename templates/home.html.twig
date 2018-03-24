@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pierre et Lucie se marient !{% endblock %}
+
+{% block body %}
+    <div id="home">
+        <div class="images">
+            <img class="img-right" src="image/img2.png" width="243" height="446"/>
+            <img class="img-left" src="image/img3.png" width="231" height="428"/>
+            <img class="img-middle" src="image/img1.png" width="692" height="389"/>
+        </div>
+        <img class="img-mobile" src="image/img13.png" width="235" height="363"/>
+        <div id="counter">
+            <p class="reenie-beanie">It’s the final countdown (toudoudouuuudou…)</p>
+            <div id="counter-d" class="counter-item"></div>
+            <div id="counter-h" class="counter-item"></div>
+            <div id="counter-m" class="counter-item"></div>
+            <div id="counter-s" class="counter-item"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 2, 2018 14:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="counter"
+            document.getElementById("counter-d").innerHTML = '<span class="counter-number">' + days + '</span><br><span class="reenie-beanie">jours</span>';
+            document.getElementById("counter-h").innerHTML = '<span class="counter-number">' + hours + '</span><br><span class="reenie-beanie">heures</span>';
+            document.getElementById("counter-m").innerHTML = '<span class="counter-number">' + minutes + '</span><br><span class="reenie-beanie">minutes</span>';
+            document.getElementById("counter-s").innerHTML = '<span class="counter-number">' + seconds + '</span><br><span class="reenie-beanie">secondes</span>';
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("counter").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+{% endblock %}

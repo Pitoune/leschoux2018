@@ -1,3 +1,6 @@
 front_news:
   resource: "front/news.yml"
   prefix: /news
+
+front_main:
+  resource: "front/main.yml"
