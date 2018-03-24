@@ -304,6 +304,43 @@ body {
 }
 
 /*
+ * ANSWER
+ */
+#answer {
+    margin-top: 30px;
+}
+
+.answer-block-1 {
+    min-height: 50px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.title-answer {
+    float: left;
+}
+
+.explain-answer {
+    position: absolute;
+    margin-left: 10px;
+    bottom: 0;
+}
+
+.img13 {
+    float: right;
+    margin-top: 15px;
+}
+
+.answer-block-2 {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.answer-block-3 {
+    text-align: center;
+}
+
+/*
  * MOBILE
  */
 @media screen and (max-width: 1200px)
@@ -334,4 +371,15 @@ body {
     .sleeping-text{ display: none; }
     .block-gift { min-height: 215px;}
     .img12{ display: none; }
+    .title-answer { float: none; }
+    .explain-answer {
+        position: static;
+        margin-left: 0;
+    }
+    .img13 {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    .answer-block-2 { margin: 10px; }
 }
