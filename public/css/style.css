@@ -3,12 +3,30 @@ body {
     font-family: Playfair Display;
 }
 
+.container {
+    max-width: 1000px;
+}
+
+.block-red {
+    background: #6F1F24;
+    padding: 10px;
+    color: white;
+}
+
 .text-red {
     color: #6F1F24;
 }
 
+.text-blue {
+    color: #0D1A72;
+}
+
 .reenie-beanie {
     font-family: Reenie Beanie;
+}
+
+.align-center {
+    text-align: center;
 }
 
 /*
@@ -89,6 +107,44 @@ body {
 }
 
 /*
+ * WHERE
+ */
+#where {
+    margin-top: 30px;
+}
+
+#where .block {
+    min-height: 260px;
+}
+
+.img-france {
+    float: right;
+}
+
+.items-where {
+    min-height: 330px;
+    margin-top: 30px;
+}
+
+.item-where {
+    float: left;
+    width: 300px;
+}
+
+.item-where img {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.place-where {
+    font-size: 20px;
+}
+
+.item-where-first {
+    margin-left: 40px;
+}
+
+/*
  * MOBILE
  */
 @media screen and (max-width: 1200px)
@@ -98,4 +154,10 @@ body {
         display: block;
         margin: 0 auto;
     }
+    .img-france{ display: none; }
+    .item-where {
+        float: none;
+        width: auto;
+    }
+    .item-where-first { margin-left: 0; }
 }
