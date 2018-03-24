@@ -33,6 +33,10 @@ body {
     text-align: right;
 }
 
+.align-left {
+    text-align: left;
+}
+
 /*
  * NAV
  */
@@ -268,6 +272,38 @@ body {
 }
 
 /*
+ * DETAILS
+ */
+#details {
+    margin-top: 30px;
+}
+
+.img10 {
+    float: right;
+    margin-left: 10px;
+}
+
+.img11 {
+    float: left;
+    margin-right: 20px;
+}
+
+.block-bed {
+    min-height: 315px;
+}
+
+.block-gift {
+    min-height: 365px;
+    position: relative;
+}
+
+.australia {
+    position: absolute;
+    bottom: 0;
+    right: 32%;
+}
+
+/*
  * MOBILE
  */
 @media screen and (max-width: 1200px)
@@ -293,4 +329,9 @@ body {
     .brunch { width: auto; }
     .brunch-item { float: none; }
     .tomorrow { width: auto; }
+    .img10{ display: none; }
+    .img11{ display: none; }
+    .sleeping-text{ display: none; }
+    .block-gift { min-height: 215px;}
+    .img12{ display: none; }
 }
