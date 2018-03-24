@@ -341,6 +341,30 @@ body {
 }
 
 /*
+ * CONTACT
+ */
+#contact {
+    margin-top: 30px;
+}
+
+.names {
+    width: 300px;
+    min-height: 100px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+/*
  * MOBILE
  */
 @media screen and (max-width: 1200px)
