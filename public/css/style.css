@@ -13,6 +13,11 @@ body {
     color: white;
 }
 
+.block-blue {
+    background: #0D1A72;
+    color: white;
+}
+
 .text-red {
     color: #6F1F24;
 }
@@ -35,6 +40,14 @@ body {
 
 .align-left {
     text-align: left;
+}
+
+/*
+ * LOGIN
+ */
+.login {
+    text-align: center;
+    margin: 50px auto;
 }
 
 /*
@@ -369,6 +382,9 @@ body {
  */
 @media screen and (max-width: 1200px)
 {
+    .login { width: 210px; }
+    .login label { display: block; }
+    .login input { margin-bottom: 10px; }
     .images{ display: none; }
     .img-mobile {
         display: block;
