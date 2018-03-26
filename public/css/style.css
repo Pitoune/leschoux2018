@@ -3,6 +3,10 @@ body {
     font-family: Playfair Display;
 }
 
+h1 {
+    letter-spacing: 8px;
+}
+
 .container {
     max-width: 1000px;
 }
@@ -48,6 +52,10 @@ body {
 .login {
     text-align: center;
     margin: 50px auto;
+}
+
+.work-pierre {
+    font-size: 20px;
 }
 
 /*
@@ -299,6 +307,10 @@ body {
 .img11 {
     float: left;
     margin-right: 20px;
+}
+
+.details-block {
+    margin: 35px 0;
 }
 
 .block-bed {
