@@ -304,6 +304,11 @@ h1 {
     margin-left: 10px;
 }
 
+.img12 {
+    float: right;
+    margin-top: 20px;
+}
+
 .img11 {
     float: left;
     margin-right: 20px;
@@ -311,6 +316,10 @@ h1 {
 
 .details-block {
     margin: 35px 0;
+}
+
+.details-parent {
+    height: 360px;
 }
 
 .block-bed {
