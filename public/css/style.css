@@ -382,7 +382,7 @@ h1 {
 }
 
 .names {
-    width: 300px;
+    width: 590px;
     min-height: 100px;
     text-align: center;
     margin-top: 15px;
@@ -394,7 +394,7 @@ h1 {
     float: left;
     margin-right: 25px;
     margin-left: 25px;
-    width: 100px;
+    width: 245px;
     text-align: center;
 }
 
@@ -424,6 +424,7 @@ h1 {
         float: none;
         width: auto;
     }
+    .names { width: auto; }
     .brunch { width: auto; }
     .brunch-item { float: none; }
     .tomorrow { width: auto; }
